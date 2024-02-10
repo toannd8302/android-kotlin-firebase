@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "202361101659",
+    "project_id": "signin-bbeaf",
+    "storage_bucket": "signin-bbeaf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202361101659:android:41ff02248869839a9a8e7e",
+        "android_client_info": {
+          "package_name": "com.example.leaningapplicationusingfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "202361101659-crdrv7mt6a3qgfbob13acoi7sflmpjt2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.leaningapplicationusingfirebase",
+            "certificate_hash": "5bc63c9137510c56d45d293c4b9eea2bd65a4189"
+          }
+        },
+        {
+          "client_id": "202361101659-2512f7rhnvpjcf0g5ns5vrd3vldrjvto.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH7mePqFy3LgMZvBnIakl_Nfo6FlO3nz0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "202361101659-2512f7rhnvpjcf0g5ns5vrd3vldrjvto.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
