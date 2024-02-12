@@ -10,6 +10,7 @@ import android.widget.Toast
 import com.example.leaningapplicationusingfirebase.databinding.ActivitySignUpBinding
 import com.google.firebase.auth.FirebaseAuth
 
+
 class SignUpActivity : AppCompatActivity(), View.OnFocusChangeListener, View.OnClickListener,
     View.OnKeyListener {
     private lateinit var binding: ActivitySignUpBinding
@@ -22,14 +23,9 @@ class SignUpActivity : AppCompatActivity(), View.OnFocusChangeListener, View.OnC
         binding.edtFullName.onFocusChangeListener = this
         binding.edtPassword.onFocusChangeListener = this
         binding.edtConfirmPassword.onFocusChangeListener = this
-
         // Initialize Firebase Auth
-
         addEvents()
-
     }
-
-
     private fun addEvents() {
         binding.btnLoginTranfer.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
@@ -67,7 +63,6 @@ class SignUpActivity : AppCompatActivity(), View.OnFocusChangeListener, View.OnC
         private fun validateFullFields(): Boolean {
             return validateEmail() && validateUsername() && validatePassword() && validateConfirmPassword()
         }
-
         private fun validateEmail(): Boolean {
             val email = binding.edtEmail.text.toString().trim()
             return if (email.isEmpty()) {
@@ -115,7 +110,6 @@ class SignUpActivity : AppCompatActivity(), View.OnFocusChangeListener, View.OnC
                 true
             }
         }
-
         override fun onFocusChange(view: View?, hasFocus: Boolean) {
             if (view != null) {
                 when (view.id) {
@@ -124,19 +118,16 @@ class SignUpActivity : AppCompatActivity(), View.OnFocusChangeListener, View.OnC
                             validateEmail()
                         }
                     }
-
                     binding.edtFullName.id -> {
                         if (!hasFocus) {
                             validateUsername()
                         }
                     }
-
                     binding.edtPassword.id -> {
                         if (!hasFocus) {
                             validatePassword()
                         }
                     }
-
                     binding.edtConfirmPassword.id -> {
                         if (!hasFocus) {
                             validateConfirmPassword()
@@ -145,14 +136,10 @@ class SignUpActivity : AppCompatActivity(), View.OnFocusChangeListener, View.OnC
                 }
             }
         }
-
         override fun onClick(v: View?) {
             TODO("Not yet implemented")
         }
-
         override fun onKey(v: View?, keyCode: Int, event: KeyEvent?): Boolean {
             TODO("Not yet implemented")
         }
-
-
     }
