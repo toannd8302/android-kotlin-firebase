@@ -5,8 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.leaningapplicationusingfirebase.R
-
+import com.example.leaningapplicationusingfirebase.models.User
 
 
 /**
@@ -20,7 +22,14 @@ class LibraryFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
+        var userList = ArrayList<User>()
+
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_library, container, false)
+
+
+
     }
+
 }

@@ -1,25 +1,20 @@
-package com.example.leaningapplicationusingfirebase
+package com.example.leaningapplicationusingfirebase.activities
 
 import android.app.Dialog
-import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.CalendarContract.Colors
 import android.view.Gravity
 import android.view.ViewGroup
-import android.view.Window
-import android.view.WindowManager
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.Toast
-import androidx.appcompat.widget.LinearLayoutCompat
 import androidx.fragment.app.Fragment
+import com.example.leaningapplicationusingfirebase.R
 import com.example.leaningapplicationusingfirebase.databinding.ActivityMainBinding
 import com.example.leaningapplicationusingfirebase.fragments.HomeFragment
 import com.example.leaningapplicationusingfirebase.fragments.LibraryFragment
 import com.example.leaningapplicationusingfirebase.fragments.ShortsFragment
 import com.example.leaningapplicationusingfirebase.fragments.SubScriptionFragment
-import com.google.android.material.bottomsheet.BottomSheetDialog
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding

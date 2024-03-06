@@ -5,15 +5,9 @@
     android:layout_height="match_parent"
     tools:context=".fragments.LibraryFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Library"
-        android:textSize="30sp"
-        android:textColor="@color/design_default_color_on_primary"
-        android:gravity="center"
-        android:background="@color/design_default_color_primary"
-        />
+        android:layout_height="match_parent" />
 
 </FrameLayout>

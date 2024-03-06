@@ -1,4 +1,4 @@
-package com.example.leaningapplicationusingfirebase
+package com.example.leaningapplicationusingfirebase.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -30,7 +30,7 @@ class LoginActivity : AppCompatActivity(), View.OnFocusChangeListener, View.OnCl
             auth.signInWithEmailAndPassword(lginEmail, loginPassword)
                 .addOnSuccessListener { authResult ->
                     Toast.makeText(this@LoginActivity, "Login Successful", Toast.LENGTH_SHORT).show()
-                    startActivity(Intent(this@LoginActivity, MainActivity::class.java))
+                    startActivity(Intent(this@LoginActivity, UploadActivity::class.java))
                     finish()
                 }
                 .addOnFailureListener { e ->
